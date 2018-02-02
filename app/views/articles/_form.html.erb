@@ -1,0 +1,10 @@
+<%= form_for Article.new, url: articles_path do |f| %>
+
+<div class="articles">
+  Name : <%= f.text_field :name %><br />
+  Author : <%= f.text_field :author %> <br />
+  Content : <%= f.text_area :content %><br />
+  </div>
+
+<%= f.submit "POST!" %>
+<% end %>

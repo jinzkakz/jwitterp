@@ -1,0 +1,17 @@
+<a href=""></a><h1>JWITTER!</h1>
+       
+<div class="articles">
+   <% if logged_in? %>
+    <h2><%= link_to "Create Article", '/articles/new' %></h2>
+    <% else %>
+<% end %>  
+</div>
+       
+<div>
+    <%= form_tag articles_path, method: 'get' %>
+    <%= label_tag 'Search articles/author' %>
+    <%= search_field_tag :search %>
+    <%= submit_tag 'Search/All' %>
+</div>
+        <br>
+        <%= render @articles %>

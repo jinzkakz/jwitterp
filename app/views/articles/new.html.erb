@@ -1,0 +1,10 @@
+<h3><%= logged_in?.email %>, please create your article here.</h3>
+
+<div class="sign-up">
+  <h2><%= t(".title") %></h2>
+  
+  <%= render 'form' %>
+</div>
+
+
+<%= link_to 'Back', root_path %>
