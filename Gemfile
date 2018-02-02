@@ -14,7 +14,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'rails-footnotes', '~> 4.0'
 # Rails footnotes display sessions, params, cookies, routes etc. Act as footnotes of the page as well
 
-
+gem 'pg', '~> 0.18.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 
